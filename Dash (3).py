@@ -9,7 +9,7 @@ from prophet import Prophet
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
-
+server=app.server
 # Load and process the data
 df = pd.read_excel("frank.xlsx")
 future = pd.read_excel("future.xlsx")
@@ -196,4 +196,4 @@ def update_dashboard(selected_activity):
 
 # Run the app
 if __name__ == '__main__':
-    app.run_server(debug=True,port=8066)
+    app.run_server(debug=True)
