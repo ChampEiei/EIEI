@@ -13,7 +13,7 @@ server=app.server
 # Load and process the data
 df = pd.read_excel("frank.xlsx")
 future = pd.read_excel("future.xlsx")
-t = pd.read_excel("C:/Users/ExPertComputer/Downloads/Book1.xlsx")
+t = pd.read_excel("Book1.xlsx")
 t['Growth Rate%']=t['Growth Rate%']*100
 t['Growth Rate most likely']=[4.9,13.86,1.06,0.94,1.29]
 
